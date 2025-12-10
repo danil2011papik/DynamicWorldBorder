@@ -1,0 +1,29 @@
+# DynamicWorldBorder v3.0
+
+settings:
+  currency-name: "&eГраничных блоков"
+  currency-symbol: "⧈"
+  default-world: "world"
+  save-interval: 300  # Автосохранение каждые 5 минут
+
+worlds:
+  # Настройки по умолчанию для новых миров
+  defaults:
+    enabled: true
+    upgradable: true
+    current-size: 1000.0
+    current-speed: 1.0
+    current-damage: 2.0
+    limits:
+      size: {min: 50.0, max: 30000.0}
+      speed: {min: 0.1, max: 10.0}
+      damage: {min: 0.0, max: 20.0}
+    costs:
+      expand: 1.0
+      shrink: 0.5
+      speed-up: 15.0
+      speed-down: 5.0
+      damage-down: 12.0
+      damage-up: 8.0
+
+# Данные миров загружаются из отдельных файлов в worlds/
