@@ -1,0 +1,27 @@
+name: DynamicWorldBorder
+version: 3.0
+main: org.dan.dynamicborder.DynamicBorderPlugin
+api-version: '1.21'
+author: Dan
+description: Динамические мировые границы с экономикой
+
+commands:
+  border:
+    description: Основная команда управления границами
+    usage: /border [help|expand|shrink|info|speed|damage|select]
+    aliases: [wb, worldborder, dynborder]
+
+  borderadmin:
+    description: Административные команды
+    usage: /borderadmin [reload|set|limits|reset|save]
+    aliases: [wbadmin, bordera]
+    permission: dynamicborder.admin
+
+permissions:
+  dynamicborder.use:
+    description: Разрешает использовать основные команды
+    default: true
+
+  dynamicborder.admin:
+    description: Полный доступ к админ-командам
+    default: op

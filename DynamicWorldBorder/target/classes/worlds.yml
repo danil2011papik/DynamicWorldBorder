@@ -1,0 +1,38 @@
+# Настройки миров по умолчанию
+defaults:
+  enabled: true
+  upgradable: true
+  current-size: 1000.0
+  current-speed: 1.0
+  current-damage: 2.0
+  damage-buffer: 5.0
+  warning-distance: 10.0
+
+  limits:
+    size:
+      min: 50.0
+      max: 30000.0
+    speed:
+      min: 0.1
+      max: 10.0
+    damage:
+      min: 0.0
+      max: 20.0
+
+  costs:
+    expand: 1.0
+    shrink: 0.5
+    speed-up: 15.0
+    speed-down: 5.0
+    damage-down: 12.0
+    damage-up: 8.0
+
+  upgrade-steps:
+    speed: 0.5
+    damage: 0.5
+
+# Настройки для конкретных миров
+worlds:
+  world:
+    enabled: true
+    current-size: 1000.0
